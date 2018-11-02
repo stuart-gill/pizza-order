@@ -23,7 +23,7 @@ Pizza.prototype.price = function () {
   else {
     sizePrice = 9.99;
   }
-  return sizePrice + toppingPrice;
+  return (sizePrice + toppingPrice).toFixed(2);
 }
 
 function arrayToSentence(array, oxfordComma) {
