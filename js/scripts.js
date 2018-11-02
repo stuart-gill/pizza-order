@@ -26,13 +26,10 @@ Pizza.prototype.price = function () {
   return (sizePrice + toppingPrice).toFixed(2);
 }
 
-function arrayToSentence(array, oxfordComma) {
+function arrayToSentence(array) {
   var localArray=array.slice();
   if (localArray.length > 1) {
     var lastWord = " and " + localArray.pop();
-    if (oxfordComma && localArray.length > 1) {
-      lastWord = "," + lastWord;
-    }
   } else {
     var lastWord = "";
   }
@@ -45,7 +42,7 @@ var newPizza = new Pizza();
 
 function showPizza(pizza) {
   $("#show-pizza").show();
-  var toppingsString = arrayToSentence(pizza.toppings, false)
+  var toppingsString = arrayToSentence(pizza.toppings)
   $("#pizza-text").html(pizza.firstName + ", your " + pizza.size + " pizza with " + toppingsString + " will cost $" + pizza.price() + ". Thank you for your order!");
 }
 
