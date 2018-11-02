@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
 
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
   <title>Order Pizza</title>
-  </head>
-  <body>
-      <div id="header" class="bg-danger text-white">
-        <h1>...Premier--Pizza...</h1>
+</head>
+
+<body>
+  <div id="header" class="bg-danger text-white">
+    <h1>...Premier--Pizza...</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Let's make you a pizza already!</h2>
+        <form id="new-pizza">
+          <div class="form-group">
+            <label for="new-first-name">Please enter your first name:</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+
+          <p>Please choose your pizza size:</p>
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="small">Small-$5.99</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="medium">Medium-$7.99</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="large">Large-$9.99</label>
+          </div>
+
+          <p>Please check all toppings you'd like, add $1.99 each:</p>
+          <input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Buffala<br>
+          <input type="checkbox" name="toppings" value="crimini">Crimini mushrooms<br>
+          <input type="checkbox" name="toppings" value="sausage">Italian sausage<br>
+          <input type="checkbox" name="toppings" value="pepperoni">Zoe's pepperoni<br>
+          <input type="checkbox" name="toppings" value="salami">Applegate Farms Genoa salami<br>
+          <input type="checkbox" name="toppings" value="arugala">Arugala<br>
+          <input type="checkbox" name="toppings" value="basil">Fresh basil<br>
+          <input type="checkbox" name="toppings" value="capers">Capers<br>
+          <input type="checkbox" name="toppings" value="olives">Gaeta olives<br>
+          <input type="checkbox" name="toppings" value="spinach">Fresh spinach<br>
+          <button type="submit" class="btn-primary">Add</button>
+        </form>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <hr>
-            <h2>Let's make you a pizza already!</h2>
-            <form id="new-pizza">
-              <div class="form-group">
-                <label for="new-first-name">Please enter your first name:</label>
-                <input type="text"  class="form-control" id="new-first-name">
-              </div>
-              
-              <p>Please choose your pizza size:</p>
-              <div class="radio">
-                <label><input type="radio" name="optradio" value="small">Small-$5.99</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="optradio" value="medium">Medium-$7.99</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="optradio" value="large">Large-$9.99</label>
-              </div>
+      <hr>
 
-              <p>Please check all toppings you'd like, add $1.99 each:</p>
-              <input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Buffala<br>
-              <input type="checkbox" name="toppings" value="crimini">Crimini mushrooms<br>
-              <input type="checkbox" name="toppings" value="sausage">Italian sausage<br>
-              <input type="checkbox" name="toppings" value="pepperoni">Zoe's pepperoni<br>
-              <input type="checkbox" name="toppings" value="salami">Applegate Farms Genoa salami<br>
-              <input type="checkbox" name="toppings" value="arugala">Arugala<br>
-              <input type="checkbox" name="toppings" value="basil">Fresh basil<br>
-              <input type="checkbox" name="toppings" value="capers">Capers<br>
-              <input type="checkbox" name="toppings" value="olives">Gaeta olives<br>
-              <input type="checkbox" name="toppings" value="spinach">Fresh spinach<br>
-              <button type="submit" class="btn-primary">Add</button>
-            </form>
-          </div>
-            <hr>
-
-
-          <div class="col-md-6">
-            <hr>
-            <div id="show-pizza">
-                <h2>Here's Your Pizza:</h2>
-              <p id="pizza-text"></p>
-              <img src="img/pizza.png" alt="pizza">
-              
-            </div>
-          </div>
+      <div class="col-md-6">
+        <hr>
+        <div id="show-pizza">
+          <h2>Here's Your Pizza:</h2>
+          <p id="pizza-text"></p>
+          <img src="img/pizza.png" alt="pizza">
         </div>
       </div>
-    </body>
-  </html>
+    </div>
+  </div>
+</body>
+</html>
