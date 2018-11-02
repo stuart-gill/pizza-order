@@ -61,7 +61,7 @@ Pizza.prototype.price = function() {
   else {
     sizePrice=9.99;
   }
-  return "Price: $" + (sizePrice+toppingPrice);
+  return sizePrice+toppingPrice;
 }
 
 
@@ -104,6 +104,25 @@ Pizza.prototype.price = function() {
 //   });
 
 // };
+
+function arrayToSentence( array, oxfordComma){
+  if( array.length > 1 ){
+    var lastWord = " and " + array.pop();
+    if( oxfordComma && array.length > 1 ){
+      lastWord = "," + lastWord;
+    }
+  }else{
+    var lastWord = "";
+  }
+  return array.join(", ") + lastWord;
+}
+
+function showPizza(newPizza) {
+  $("#show-pizza").show();
+  var toppingsString = arrayToSentence(newPizza.toppings, false)
+  $("#pizza-text").html(newPizza.firstName + ", your " + newPizza.size + " pizza with " + toppingsString + " will cost $" + newPizza.price() + ". Thank you for your order!");
+}
+
 var newPizza = new Pizza();
 
 $(document).ready(function() {
@@ -118,6 +137,7 @@ $(document).ready(function() {
       var inputtedTopping = $(this).val();
       newPizza.addToppings(inputtedTopping);
     });
+    showPizza(newPizza);
   });
 })
 
