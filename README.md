@@ -13,7 +13,7 @@
 
 
 ## Setup/Installation Requirements
-_Check out the website in your browser at this link:_ https://stuart-gill.github.io/order-pizza
+_Check out the website in your browser at this link:_ https://stuart-gill.github.io/pizza-order
 _Alternatively, you may clone the beep-boop directory from github and open the index.html file in the browser of your choice._
 _This website is best viewed in Chrome_
 
