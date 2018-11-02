@@ -14,12 +14,35 @@
         <div class="row">
           <div class="col-md-8">
             <hr>
-            <h2>Add a Contact:</h2>
-            <form id="new-contact">
+            <h2>Let's make this pizza!</h2>
+            <form id="new-pizza">
               <div class="form-group">
-                <label for="new-first-name">First Name</label>
+                <label for="new-first-name">Please enter your first name:</label>
                 <input type="text"  class="form-control" id="new-first-name">
               </div>
+              
+              <p>Please choose your pizza size:</p>
+              <div class="radio">
+                <label><input type="radio" name="optradio" value="Small">Small</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" value="Medium">Medium</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" value="Large">Large</label>
+              </div>
+
+              <p>Please check all toppings you'd like:</p>
+              <input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Buffala<br>
+              <input type="checkbox" name="toppings" value="crimini">Crimini mushrooms<br>
+              <input type="checkbox" name="toppings" value="sausage">Italian sausage<br>
+              <input type="checkbox" name="toppings" value="pepperoni">Zoe's pepperoni<br>
+              <input type="checkbox" name="toppings" value="salami">Applegate Farms Genoa salami<br>
+              <input type="checkbox" name="toppings" value="arugala">Arugala<br>
+              <input type="checkbox" name="toppings" value="basil">Fresh basil<br>
+              <input type="checkbox" name="toppings" value="capers">Capers<br>
+              <input type="checkbox" name="toppings" value="olives">Gaeta olives<br>
+              <input type="checkbox" name="toppings" value="spinach">Fresh spinach<br>
               <button type="submit" class="btn-primary">Add</button>
             </form>
             <hr>
