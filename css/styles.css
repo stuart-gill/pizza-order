@@ -6,3 +6,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+#header{
+  text-align: center;
+ padding: 30px;
+  height: 150px;
+  font-family: 'Rock Salt', cursive;
+ 
+}
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Rock Salt';
+}
